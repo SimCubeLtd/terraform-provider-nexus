@@ -1,13 +1,13 @@
 package provider
 
 import (
+	"github.com/SimCubeLtd/terraform-provider-nexus/services/blobstore"
+	"github.com/SimCubeLtd/terraform-provider-nexus/services/deprecated"
+	"github.com/SimCubeLtd/terraform-provider-nexus/services/other"
+	"github.com/SimCubeLtd/terraform-provider-nexus/services/repository"
+	"github.com/SimCubeLtd/terraform-provider-nexus/services/security"
 	nexus "github.com/datadrivers/go-nexus-client/nexus3"
 	"github.com/datadrivers/go-nexus-client/nexus3/pkg/client"
-	"github.com/datadrivers/terraform-provider-nexus/internal/services/blobstore"
-	"github.com/datadrivers/terraform-provider-nexus/internal/services/deprecated"
-	"github.com/datadrivers/terraform-provider-nexus/internal/services/other"
-	"github.com/datadrivers/terraform-provider-nexus/internal/services/repository"
-	"github.com/datadrivers/terraform-provider-nexus/internal/services/security"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
