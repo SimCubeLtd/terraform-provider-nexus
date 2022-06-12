@@ -1,0 +1,8 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/prom3theu5/terraform-provider-nexus'
+sh -c "'/home/prom3theu5/terraform-provider-nexus/scripts/gofmtcheck.sh'"
+go build -v .
+make: Leaving directory '/home/prom3theu5/terraform-provider-nexus'
+ 
+your 131072x1 screen size is bogus. expect trouble
+

@@ -1,0 +1,400 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+your 131072x1 screen size is bogus. expect trouble
+
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Jun 12 20:47:52 2022
+
+# Variables
+
+# makefile (from 'GNUmakefile', line 3)
+PKG_NAME = nexus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+NVM_INC = /home/prom3theu5/.nvm/versions/node/v14.19.3/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /home/prom3theu5/terraform-provider-nexus
+# makefile (from 'GNUmakefile', line 4)
+PKG_OS = darwin linux
+# makefile
+SHELL = /bin/sh
+# environment
+FZF_DEFAULT_COMMAND = rg --hidden --no-ignore --files -g "!.git/"
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /mnt/c/Users/daves/AppData/Local/Programs/Microsoft VS Code/bin/code
+# makefile (from 'GNUmakefile', line 8)
+GOBUILD = $(GOCMD) build
+# environment
+STARSHIP_SESSION_KEY = 1235024482555224
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_CWD = /mnt/c/Users/daves/AppData/Local/Programs/Microsoft VS Code
+# makefile (from 'GNUmakefile', line 18)
+MINIKUBE_MOUNT_PID = $(word 1,$(shell ps | grep -v grep | grep 'minikube mount' | grep $(PWD)/scripts))
+# makefile (from 'GNUmakefile', line 15)
+NEXUS_HOST = $(shell cd ./scripts && ./detect-docker-env-ip.sh)
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/prom3theu5/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/prom3theu5/.nvm/versions/node/v14.19.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Microsoft SDKs/Azure/CLI2/wbin:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/Program Files/Oculus/Support/oculus-runtime:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Amazon/AWSCLIV2/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Windows/SysWow64:/mnt/c/Program Files/LINQPad7:/mnt/c/Program Files/Microsoft/Azure Functions Core Tools/:/mnt/c/Program Files/nodejs/:/mnt/c/Program Files (x86)/Sennheiser/Sennheiser Updater/:/mnt/c/Program Files (x86)/Tailscale IPN:/mnt/c/Program Files/k6/:/mnt/c/ProgramData/chocolatey/lib/pulumi/tools/Pulumi/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git LFS:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/GitHub CLI/:/mnt/c/Users/daves/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/daves/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/daves/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/daves/.dotnet/tools:/mnt/c/Users/daves/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/daves/AppData/Local/gitkraken/bin:/mnt/c/Users/daves/.dotnet/tools:/mnt/c/docker:/mnt/c/tools:/mnt/c/Tools/flutter/bin:/mnt/c/Tools/jdk-11.0.11+9/bin:/mnt/c/Users/daves/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/daves/AppData/Roaming/npm:/mnt/c/Users/daves/AppData/Local/Programs/oh-my-posh/bin:/mnt/c/Users/daves/AppData/Local/Programs/oh-my-posh/themes:/mnt/c/Users/daves/go/bin:/mnt/c/Users/daves/AppData/Local/JetBrains/Installations/Rider203/bin:/home/prom3theu5/.fzf/bin:/home/linuxbrew/.linuxbrew/bin:/home/prom3theu5/.pulumi/bin
+# makefile (from 'GNUmakefile', line 16)
+MINIO_HOST = $(shell if [ "$(NEXUS_HOST)" = "127.0.0.1" ]; then echo "minio"; else echo "$(NEXUS_HOST)"; fi;)
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from 'GNUmakefile', line 5)
+PKG_ARCH = amd64
+# environment
+FZF_BASE = /home/prom3theu5/.fzf
+# makefile (from 'GNUmakefile', line 1)
+MAKEFILE_LIST :=  GNUmakefile
+# environment
+NVM_BIN = /home/prom3theu5/.nvm/versions/node/v14.19.3/bin
+# environment
+VSCODE_LOG_STACK = false
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1c9ba421-1af9-4aa1-a5da-78a0f6138d84.sock
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# automatic
+%F = $(notdir $%)
+# environment
+FZF_CTRL_T_COMMAND = rg --hidden --no-ignore --files -g "!.git/"
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/prom3theu5/terraform-provider-nexus
+# default
+.LOADED := 
+# environment
+WSL_INTEROP = /run/WSL/14_interop
+# makefile (from 'GNUmakefile', line 9)
+GO111MODULE111 = on
+# environment
+WT_SESSION = 3555db94-4047-4768-92f0-c207699428ef
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/prom3theu5
+# environment
+LOGNAME = prom3theu5
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
+# environment
+ZSH = /home/prom3theu5/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'GNUmakefile', line 1)
+TEST = $$(go list ./...  | grep -v 'vendor')
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = prom3theu5
+# makefile
+.DEFAULT_GOAL := default
+# environment
+NAME = Code
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/daves/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
+# environment
+BREW_HOME = /home/linuxbrew/.linuxbrew/bin
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /mnt/c/Users/daves/AppData/Local/Programs/Microsoft VS Code
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/prom3theu5/.nvm
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# environment
+WT_PROFILE_ID = {51855cb2-8cce-5362-8f54-464b92b32386}
+# 'override' directive
+.SHELLSTATUS := 1
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'GNUmakefile', line 10)
+GOFLAGS = -mod=vendor
+# makefile (from 'GNUmakefile', line 13)
+WEBSITE_REPO = github.com/hashicorp/terraform-website
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# makefile (from 'GNUmakefile', line 17)
+NEXUS_PORT = $(shell grep -E "(NEXUS_PORT=)" ./scripts/.env | grep -oE "[0-9]+")
+# environment
+HOSTTYPE = x86_64
+# makefile (from 'GNUmakefile', line 7)
+GOCMD = go
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# default
+.RECIPEPREFIX := 
+# environment
+FZF_DEFAULT_OPTS = --height 40% --layout=reverse --border
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+WSL_DISTRO_NAME = Ubuntu
+# makefile (from 'GNUmakefile', line 11)
+GOFMT_FILES = $$(find . -name '*.go' | grep -v vendor)
+# environment
+STARSHIP_SHELL = zsh
+# variable set hash-table stats:
+# Load=96/1024=9%, Rehash=0, Collisions=10/131=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2064, inode 246543): 1 files, no impossibilities so far.
+
+# 1 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+testacc: fmtcheck
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 54):
+	NEXUS_URL="http://$(NEXUS_HOST):$(NEXUS_PORT)" \
+	NEXUS_USERNAME="admin" \
+	NEXUS_PASSWORD="admin123" \
+	AWS_ACCESS_KEY_ID="minioadmin" \
+	AWS_SECRET_ACCESS_KEY="minioadmin" \
+	AWS_ENDPOINT="http://$(MINIO_HOST):9000" \
+	TF_ACC=1 go test $(TEST) -v $(TESTARGS) -cover -timeout 120m -parallel=4
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: build start-services stop-services test testacc fmt fmtcheck lint tools docs
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+stop-services:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 34):
+	cd ./scripts && ./stop-services.sh && cd -
+
+darwin-build-install: fmtcheck
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 46):
+	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 $(GOBUILD) -o ~/.terraform.d/plugins/darwin_amd64/terraform-provider-nexus -v
+
+test: fmtcheck
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 49):
+	go test -i $(TEST) || exit 1
+	echo $(TEST) | \
+		xargs -t -n4 go test -cover $(TESTARGS) -timeout=30s -parallel=4
+
+build: fmtcheck
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 37):
+	go build -v .
+ 
+
+vet:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 63):
+	@echo "go vet ."
+	@go vet $$(go list ./... | grep -v vendor/) ; if [ $$? -eq 1 ]; then \
+		echo ""; \
+		echo "Vet found suspicious constructs. Please check the reported constructs"; \
+		echo "and fix them if necessary before submitting the code for review."; \
+		exit 1; \
+	fi
+
+darwin: fmtcheck
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 43):
+	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 $(GOBUILD) -o terraform.d/plugins/darwin_amd64/terraform-provider-nexus -v
+
+start-services:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 28):
+	cd ./scripts && ./start-services.sh && cd -
+
+default: build
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+fmtcheck:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 75):
+	@sh -c "'$(CURDIR)/scripts/gofmtcheck.sh'"
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+docs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 87):
+	go generate ./...
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-12 20:47:31.273009927
+#  File has been updated.
+#  Successfully updated.
+
+linux: fmtcheck
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 40):
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o terraform.d/plugins/linux_amd64/terraform-provider-nexus -v
+
+fmt:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 72):
+	gofmt -w $(GOFMT_FILES)
+
+lint:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 78):
+	@echo "==> Checking source code against linters..."
+	@golangci-lint run ./$(PKG_NAME)
+
+tools:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'GNUmakefile', line 82):
+	@echo "==> installing required tooling..."
+	go install github.com/client9/misspell/cmd/misspell
+	go install github.com/golangci/golangci-lint/cmd/golangci-lint
+
+# files hash-table stats:
+# Load=20/1024=2%, Rehash=0, Collisions=0/49=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 23 / storage = 199 B / avg = 8 B
+# current buf: size = 8162 B / used = 199 B / count = 23 / avg = 8 B
+
+# strcache performance: lookups = 59 / hit rate = 61%
+# hash-table stats:
+# Load=23/8192=0%, Rehash=0, Collisions=0/59=0%
+# Finished Make data base on Sun Jun 12 20:47:52 2022
+
+ 

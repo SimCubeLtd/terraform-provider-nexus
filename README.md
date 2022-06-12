@@ -1,6 +1,6 @@
 # Terraform provider Nexus
 
-![codeql workflow](https://github.com/datadrivers/terraform-provider-nexus/actions/workflows/codeql-analysis.yml/badge.svg)
+![codeql workflow](https://github.com/SimCubeLtd/terraform-provider-nexus/actions/workflows/codeql-analysis.yml/badge.svg)
 
 - [Terraform provider Nexus](#terraform-provider-nexus)
   - [Introduction](#introduction)

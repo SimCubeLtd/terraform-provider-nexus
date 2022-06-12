@@ -1,0 +1,1 @@
+{"buildTargets":["build","darwin","darwin-build-install","default","docs","fmt","fmtcheck","lint","linux","start-services","stop-services","test","testacc","tools","vet"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
