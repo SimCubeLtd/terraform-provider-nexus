@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/SimCubeLtd/terraform-provider-nexus/acceptance"
+	"github.com/SimCubeLtd/terraform-provider-nexus/tools"
 	"github.com/datadrivers/go-nexus-client/nexus3/schema/security"
-	"github.com/datadrivers/terraform-provider-nexus/internal/acceptance"
-	"github.com/datadrivers/terraform-provider-nexus/internal/tools"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/stretchr/testify/assert"
 )

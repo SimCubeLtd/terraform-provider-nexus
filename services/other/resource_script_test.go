@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/SimCubeLtd/terraform-provider-nexus/acceptance"
 	"github.com/datadrivers/go-nexus-client/nexus3/schema"
-	"github.com/datadrivers/terraform-provider-nexus/internal/acceptance"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 )

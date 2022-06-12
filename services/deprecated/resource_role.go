@@ -3,10 +3,10 @@ package deprecated
 import (
 	"strings"
 
+	"github.com/SimCubeLtd/terraform-provider-nexus/schema/common"
+	"github.com/SimCubeLtd/terraform-provider-nexus/tools"
 	nexus "github.com/datadrivers/go-nexus-client/nexus3"
 	"github.com/datadrivers/go-nexus-client/nexus3/schema/security"
-	"github.com/datadrivers/terraform-provider-nexus/internal/schema/common"
-	"github.com/datadrivers/terraform-provider-nexus/internal/tools"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

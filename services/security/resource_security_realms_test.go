@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/datadrivers/terraform-provider-nexus/internal/acceptance"
+	"github.com/SimCubeLtd/terraform-provider-nexus/acceptance"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 )
 
